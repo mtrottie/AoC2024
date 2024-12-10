@@ -1,0 +1,203 @@
+[package]
+name = "advent_2024"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.11.1"
+itertools = "0.13.0"
+
+[profile.dev]
+overflow-checks = false
+
+[[bin]]
+name = "one_part_two"
+path = "src/bin/1/part_two.rs"
+
+[[bin]]
+name = "two"
+path = "src/bin/2/part_one.rs"
+
+[[bin]]
+name = "two_part_two"
+path = "src/bin/2/part_two.rs"
+
+[[bin]]
+name = "three_a"
+path = "src/bin/3/part_one.rs"
+
+[[bin]]
+name = "three_b"
+path = "src/bin/3/part_two.rs"
+
+[[bin]]
+name = "four_part_one"
+path = "src/bin/4/part_one.rs"
+
+[[bin]]
+name = "four_part_two"
+path = "src/bin/4/part_two.rs"
+
+[[bin]]
+name = "five_part_one"
+path = "src/bin/5/part_one.rs"
+
+[[bin]]
+name = "five_part_two"
+path = "src/bin/5/part_two.rs"
+
+[[bin]]
+name = "six_part_one"
+path = "src/bin/6/part_one.rs"
+
+[[bin]]
+name = "six_part_two"
+path = "src/bin/6/part_two.rs"
+
+[[bin]]
+name = "seven_part_one"
+path = "src/bin/7/part_one.rs"
+
+[[bin]]
+name = "eight"
+path = "src/bin/8/part_one.rs"
+
+[[bin]]
+name = "eight_part_two"
+path = "src/bin/8/part_two.rs"
+
+[[bin]]
+name = "nine"
+path = "src/bin/9/part_one.rs"
+
+[[bin]]
+name = "nine_part_two"
+path = "src/bin/9/part_two.rs"
+
+[[bin]]
+name = "ten"
+path = "src/bin/10/part_one.rs"
+
+[[bin]]
+name = "ten_part_two"
+path = "src/bin/10/part_two.rs"
+
+[[bin]]
+name = "eleven"
+path = "src/bin/11/part_one.rs"
+
+[[bin]]
+name = "eleven_part_two"
+path = "src/bin/11/part_two.rs"
+
+[[bin]]
+name = "twelve"
+path = "src/bin/12/part_one.rs"
+
+[[bin]]
+name = "twelve_part_two"
+path = "src/bin/12/part_two.rs"
+
+[[bin]]
+name = "thirteen"
+path = "src/bin/13/part_one.rs"
+
+[[bin]]
+name = "thirteen_part_two"
+path = "src/bin/13/part_two.rs"
+
+[[bin]]
+name = "fourteen"
+path = "src/bin/14/part_one.rs"
+
+[[bin]]
+name = "fourteen_part_two"
+path = "src/bin/14/part_two.rs"
+
+[[bin]]
+name = "fifteen"
+path = "src/bin/15/part_one.rs"
+
+[[bin]]
+name = "fifteen_part_two"
+path = "src/bin/15/part_two.rs"
+
+[[bin]]
+name = "sixteen"
+path = "src/bin/16/part_one.rs"
+
+[[bin]]
+name = "sixteen_part_two"
+path = "src/bin/16/part_two.rs"
+
+[[bin]]
+name = "seventeen"
+path = "src/bin/17/part_one.rs"
+
+[[bin]]
+name = "seventeen_part_two"
+path = "src/bin/17/part_two.rs"
+
+[[bin]]
+name = "eighteen"
+path = "src/bin/18/part_one.rs"
+
+[[bin]]
+name = "eighteen_part_two"
+path = "src/bin/18/part_two.rs"
+
+[[bin]]
+name = "nineteen"
+path = "src/bin/19/part_one.rs"
+
+[[bin]]
+name = "nineteen_part_two"
+path = "src/bin/19/part_two.rs"
+
+[[bin]]
+name = "twenty"
+path = "src/bin/20/part_one.rs"
+
+[[bin]]
+name = "twenty_part_two"
+path = "src/bin/20/part_two.rs"
+
+[[bin]]
+name = "twentyone"
+path = "src/bin/21/part_one.rs"
+
+[[bin]]
+name = "twentyone_part_two"
+path = "src/bin/21/part_two.rs"
+
+[[bin]]
+name = "twentytwo"
+path = "src/bin/22/part_one.rs"
+
+[[bin]]
+name = "twentytwo_part_two"
+path = "src/bin/22/part_two.rs"
+
+[[bin]]
+name = "twentythree"
+path = "src/bin/23/part_one.rs"
+
+[[bin]]
+name = "twentythree_part_two"
+path = "src/bin/23/part_two.rs"
+
+[[bin]]
+name = "twentyfour"
+path = "src/bin/24/part_one.rs"
+
+[[bin]]
+name = "twentyfour_part_two"
+path = "src/bin/24/part_two.rs"
+
+[[bin]]
+name = "twentyfive"
+path = "src/bin/25/part_one.rs"
+
+[[bin]]
+name = "twentyfive_part_two"
+path = "src/bin/25/part_two.rs"
