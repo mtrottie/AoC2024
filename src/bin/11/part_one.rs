@@ -1,4 +1,4 @@
-use std::fs::read_to_string;
+use std::{collections::VecDeque, fs::read_to_string};
 
 const NUM: &str = "11";
 
@@ -8,16 +8,47 @@ fn main() {
 }
 
 fn part(file_path: &str) -> usize {
-    let mut grid = Vec::new();
+    let mut grid = VecDeque::new();
     for line in read_to_string(file_path).unwrap().lines() {
-        grid.push(
-            line.chars()
-                .map(|i| i.to_digit(10).unwrap() as usize)
-                .collect::<Vec<usize>>(),
-        );
+        grid = line
+            .split(' ')
+            .map(|i| i.parse::<usize>().unwrap())
+            .collect::<VecDeque<usize>>();
     }
 
-    0
+    let mut blinks = 25;
+
+    while blinks > 0 {
+        let mut new_grid_counter = 0;
+        let mut new_grid = VecDeque::new();
+        for j in 0..grid.len() {
+            if grid[j] == 0 {
+                new_grid.insert(new_grid_counter, 1);
+            } else if grid[j].to_string().len() % 2 == 0 {
+                let string = grid[j].to_string();
+                new_grid.insert(
+                    new_grid_counter,
+                    string[0..string.len() / 2].parse::<usize>().unwrap(),
+                );
+                new_grid_counter = new_grid_counter + 1;
+                new_grid.insert(
+                    new_grid_counter,
+                    string[string.len() / 2..string.len()]
+                        .parse::<usize>()
+                        .unwrap(),
+                );
+            } else {
+                new_grid.insert(new_grid_counter, grid[j] * 2024);
+            }
+
+            new_grid_counter = new_grid_counter + 1;
+        }
+
+        grid = new_grid;
+        blinks = blinks - 1;
+    }
+
+    grid.len()
 }
 
 #[cfg(test)]
@@ -32,7 +63,7 @@ mod tests {
                 )
                 .as_str()
             ),
-            0
+            55312
         );
     }
 }
