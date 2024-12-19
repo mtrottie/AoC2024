@@ -6,6 +6,8 @@ edition = "2021"
 [dependencies]
 regex = "1.11.1"
 itertools = "0.13.0"
+crossterm = "0.27.0"
+z3 = "0.12.1"
 
 [profile.dev]
 overflow-checks = false

@@ -59,7 +59,7 @@ fn part(file_path: &str, y: i32, x: i32, steps: i32) -> usize {
         for line in grid.iter() {
             // uncomment this line and print to a file and search for the easter egg manually, I used the answer form field to do
             // binary search to get an approximation of where it was, i initially did 5k and 10k and just searched through
-            // the ascii printed in vim
+            // the ascii printed in
             // println!("{:?}", line);
         }
     }
